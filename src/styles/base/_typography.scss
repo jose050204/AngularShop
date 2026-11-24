@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+body {
+    font-family: $font-family-base;
+    color: $color-black;
+}
+
+h1 {
+    font-size: rem(38);
+    margin: 0;
+}
+
+h2 {
+    font-size: rem(28);
+    margin: 0;
+}
