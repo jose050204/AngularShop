@@ -1,0 +1,52 @@
+@use '../../../../styles/abstracts' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-24;
+    height: rem(72);
+    padding: $space-12 $space-32;
+    background-color: $color-gray;
+}
+
+.header__logo-img {
+    height: rem(21.79);
+    width: auto;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: $space-32;
+}
+
+.header__cart {
+    display: flex;
+    align-items: center;
+    gap: $space-8;
+    color: $color-black;
+    text-decoration: none;
+}
+
+.header__menu {
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.header__all-products {
+    display: none;
+    padding: $space-12;
+    border-radius: $border-radius-4;
+    background-color: $color-black;
+    color: $color-white;
+    font-size: $font-size-base;
+    line-height: rem(24);
+    text-decoration: none;
+
+    @include tablet {
+        display: block;
+    }
+}
