@@ -1,0 +1,6 @@
+@use '../../../../styles/abstracts' as *;
+
+.footer {
+    height: rem(72);
+    background-color: $color-gray;
+}
