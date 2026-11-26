@@ -10,10 +10,17 @@
     gap: $space-16;
 }
 
-.product-card__image {
-    width: 100%;
+.product-card__media {
+    display: flex;
+    justify-content: center;
     height: rem(274);
-    object-fit: contain;
+    border: $border-width-1 solid $color-brown;
+    border-radius: $border-radius-4;
+}
+
+.product-card__image {
+    height: 100%;
+    width: auto;
 }
 
 .product-card__name {
