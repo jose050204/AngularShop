@@ -1,0 +1,21 @@
+@use '../../../../styles/abstracts' as *;
+
+.product-list__title {
+    margin-bottom: $space-32;
+}
+
+.product-list__filters {
+    display: flex;
+    gap: $space-16;
+}
+
+.product-list__filter {
+    padding: $space-4 $space-12;
+    border: $border-width-1 solid $color-black;
+    border-radius: $border-radius-4;
+    background-color: $color-white;
+    color: $color-black;
+    font: inherit;
+    line-height: rem(22);
+    cursor: pointer;
+}
