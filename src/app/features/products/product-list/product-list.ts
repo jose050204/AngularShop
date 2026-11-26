@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { Product } from '../../../models/product.model';
+import { Component, inject } from '@angular/core';
 import { ProductCard } from '../../../shared/components/product-card/product-card';
+import { Products } from '../../../core/services/products';
 
 @Component({
   imports: [ProductCard],
@@ -9,11 +9,6 @@ import { ProductCard } from '../../../shared/components/product-card/product-car
   templateUrl: './product-list.html',
 })
 export class ProductList {
-  product: Product = {
-    id:1,
-    name: 'Pera',
-    price: 5,
-    image: 'images/products/Pera.png',
-    category: 'frutas'
-  }
+  private readonly productsService = inject(Products);
+  readonly products = this.productsService.products
 }

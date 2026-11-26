@@ -6,6 +6,10 @@
     <button class="product-list__filter" type="button">Zumos</button>
 </div>
 
-<h2 class="product-list__count">6 resultados de productos</h2>
+<h2 class="product-list__count">{{ products().length }} resultados de productos</h2>
 
-<app-product-card [product]="product"></app-product-card>
+<div class="product-list__grid">
+    @for (product of products(); track product.id) {
+        <app-product-card [product]="product"></app-product-card>
+    }
+</div>
