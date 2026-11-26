@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.button {
+    padding: $space-12;
+    border: 0;
+    border-radius: $border-radius-4;
+    color: $color-white;
+    font: inherit;
+    line-height: rem(24);
+    cursor: pointer;
+}
+
+.button--brown {
+    background-color: $color-brown;
+}
