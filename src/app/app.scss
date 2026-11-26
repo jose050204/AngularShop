@@ -1,3 +1,5 @@
+@use '../styles/abstracts' as *;
+
 :host {
   display: flex;
   flex-direction: column;
@@ -6,4 +8,5 @@
 
 .app__main {
   flex: 1;
+  padding: $space-64 $space-32;
 }
