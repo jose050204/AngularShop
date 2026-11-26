@@ -1,0 +1,31 @@
+@use '../../../../styles/abstracts' as *;
+
+:host {
+    display: block;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: $space-16;
+}
+
+.product-card__image {
+    width: 100%;
+    height: rem(274);
+    object-fit: contain;
+}
+
+.product-card__name {
+    margin: 0;
+    font-size: $font-size-h3;
+    font-weight: normal;
+}
+
+.product-card__price {
+    margin: 0;
+}
+
+.product-card__button {
+    width: 100%;
+}
