@@ -11,4 +11,8 @@ export class Products {
         { id: 5, name: 'Plátano', price: 8, image: 'images/products/Platano.jpg', category: 'frutas' },
         { id: 6, name: 'Zumo de naranja', price: 13, image: 'images/products/Zumo-naranja.jpg', category: 'zumos' },
     ]).asReadonly()
+
+    getById(id: number) {
+        return this.products().find(p => p.id === id)
+    }
 }
